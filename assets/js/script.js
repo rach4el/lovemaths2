@@ -14,13 +14,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+runGame("addition");
 
 /** The main game "loop, called when script is first loaded" */
-function runGame() {
+function runGame(gameType) {
     
     
     let num1 = Math.floor(Math.random() *25) + 1
     let num2 = Math.floor(Math.random() *25) + 1
+
+    if(gameType === "addition") {
+        displayAdditionQuestion(num1, num2);
+    } else {
+        alert(`unknown game type: ${gameType}`);
+        throw `unknown game type: ${gameType}. Aborting!`;
+    }
+
 
 }
 
