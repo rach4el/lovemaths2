@@ -40,9 +40,19 @@ function runGame(gameType) {
 
 function checkAnswer() {
 
-    
-}
+    let userAnswer = parseInt(document.getElementById("answer-box").value)
+    let calculatedAnswer = calculatedCorrectAnswer();
+    let isCorrect = userAnswer === CalculateAnswer[0];
 
+    if (isCorrecy) {
+        alert("Hey! You got it right! :D");
+    } else {
+        alert("Awww... you answered ${userAnswer}. The correct answer was ${calculateAnswer[0]}!");
+    }
+    
+    runGame(calculatedAnswer[1]);
+
+}
 function calculateCorrectAnswer() {
 
 }
