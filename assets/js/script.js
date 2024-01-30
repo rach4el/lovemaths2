@@ -145,10 +145,6 @@ function displayMultiplyQuestion(operand1, operand2) {
 }
 function displayDivisionQuestion(operand1, operand2) {
 
-    let num2 = Math.floor(Math.random() * 25) + 1;
-    let result = Math.floor(Math.random() * 25) + 1;
-    let num1 = result * num2; 
-
     document.getElementById("operand1").textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById("operand2").textContent = operand1 > operand2 ? operand2 : operand1;
     document.getElementById('operator').textContent = "/";
